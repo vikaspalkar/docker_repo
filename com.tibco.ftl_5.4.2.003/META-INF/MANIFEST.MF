@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.tibco.ftl
+Bundle-Version: 5.4.2.003
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Import-Package: org.osgi.framework;version="[1.6.0,2.0.0]"
+Bundle-Activator: Activator
+Bundle-ClassPath: tibftlgroup.jar,tibftl.jar,json_simple-1.1.jar,
+ .
+Bundle-NativeCode: lib/libcurl.dll;lib/libcrypto-1_1-x64.dll;lib/libssl-1_1-x64.dll;lib/nghttp2.dll;lib/tibutil.dll;lib/tib.dll;lib/tibgroup.dll;lib/tibftljni.dll;lib/tibftlgroupjni.dll; processor=x86_64; osname=Win32; osname=Windows8; osname=Windows10; osname=WindowsServer2008R2; osname=WindowsServer2012; osname=WindowsServer2012R2; osname=WindowsServer2016; osname="Windows Server 2008 R2"; osname="Windows Server 2012 R2"; osname="Windows 10"; osname="Windows Server 2016",
+ * 
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: 
+  com.tibco.ftl;version="5.4.2",
+  com.tibco.ftl.exceptions;version="5.4.2",
+  com.tibco.ftl.group;version="5.4.2",
+  com.tibco.ftl.group.jni;version="5.4.2",
+  com.tibco.ftl.jni;version="5.4.2"
